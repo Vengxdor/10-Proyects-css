@@ -1,0 +1,62 @@
+*{
+   box-sizing: border-box;
+   margin: 0%;
+   padding: 0%;
+}
+
+body, html{
+   height: 100%;
+   background-color: #1f1f1f;
+   font-family: sans-serif;
+}
+
+.flex{
+   display: flex;
+   margin: 3rem;
+}
+
+
+
+.card-container .card{
+   color: #fff;
+   height: 350px;
+   width: 300px;
+   background: #0684f9;
+   border-radius: 10px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   font-weight: bold;
+   box-sizing: border-box;
+   position: relative;
+
+   transition: all .3s ease;
+}
+
+.card-container .card:hover{
+   margin-right: 10px;
+   transform: translateY(-10px);
+   transform: rotate(10deg);
+}
+.card .header{
+   margin: 20px 0 0 20px;
+   
+}
+.card .footer{
+   margin: 0 0 20px 20px;
+
+}
+
+.card footer .name{
+   color: yellow;
+}
+img{
+   height: 30px;
+   width: 30px;
+   border-radius: 50%;
+   margin-bottom: -7px;
+}
+
+.card-container .card[class*="element"]{
+   margin-left: -100px;
+}

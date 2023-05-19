@@ -1,0 +1,175 @@
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+
+body, html{
+   height: 100%;
+   font-family: Arial, Helvetica, sans-serif;
+   background-color: #8d2cc1;
+   font-size: 16px;
+}
+
+
+body{
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+.main-container {
+   background: #fff;
+   height: 90%;
+   width: 80%;
+   display: flex;
+   align-items: center;
+   border-radius: 10px;
+   overflow: hidden;
+}
+
+.login-container{
+   width: 400px;
+   margin: 0 auto;
+}
+
+.login-container header h2{
+   font-size: 2.5rem;
+   text-align: center;
+}
+
+.login-container header p{
+   color: #555;
+   text-align: center;
+   margin: 10px;
+}
+
+.login-container main form label{
+   display: block;
+   padding: 5px 0;
+   font-weight: bolder;
+}
+
+.login-container main form input{
+   width: 100%;
+   padding: 5px;
+   font-size: 18px;
+   margin: 3px;
+}
+
+
+.login-container main form input:focus{
+   outline: solid 2px #0099ff;
+}
+
+.login-container main .options{
+   display: flex;
+   justify-content: space-between;
+   margin: 10px;
+}
+
+.login-container main .options a{
+   color: #0099ff;
+}
+
+.login-container main .options a:hover{
+   text-decoration: underline;
+}
+.login-container  a{
+   text-decoration: none;
+}
+
+.login-container main .log{
+   background-color: black;
+   color: #fff;
+}
+
+.login-container main .log:hover{
+background-color: #333;
+}
+
+.login-container main .log a{
+   color: #fff;
+}
+
+.login-container footer > p{
+   text-align: center;
+}
+
+.login-container footer{
+   margin-top: 30px;
+}
+
+
+
+.btn{
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   padding: 15px 0;
+   text-transform: uppercase;
+   cursor: pointer;
+   color: #fff;
+   font-weight: bolder;
+}
+
+.login-container footer .social .btn{
+   margin: 10px 0;
+}
+
+.btn.google{
+   border: solid 1px black;
+   color: #000;
+}
+
+.btn.google:hover{
+   background-color: #ececec;
+}
+
+.btn.facebook{
+   background-color: #0a40b3;
+}
+
+.btn.facebook:hover{
+   background-color: #093492;
+
+}
+
+.btn.twitter{
+   background-color: #1181aa;
+}
+
+.btn.twitter:hover{
+   background-color: #0f7094;
+}
+
+.welcome{
+   background:  #000;
+   height: 100%;
+   width: 50%;
+}
+
+@media screen and (max-width:1030px) {
+   
+   .main-container{
+      width: 95%;
+   }
+   
+   .welcome{
+      width: 40%;
+   }
+
+   .login-container{
+      width: 350px;
+   }
+}
+
+@media screen and (max-width:670px) {
+
+   .welcome{
+      display: none;
+   }
+}
